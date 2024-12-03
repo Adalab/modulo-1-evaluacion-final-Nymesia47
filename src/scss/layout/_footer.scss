@@ -4,6 +4,15 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4.0rem 1fr 1fr 10.0rem;
+
+  @media (width >= 768px) {
+    height: 25vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4.0rem 1fr;
+    grid-template-areas: 
+    "link-top link-top link-top"
+    "copy topics social";
+}
 }
 
 .link-container {
@@ -18,6 +27,11 @@
     box-shadow: 0rem 0.4rem .4rem 0 rgba(0, 0, 0, 0.25);
     margin-bottom: 2.0rem;
     translate: 0 -20%;
+
+    @media (width >= 768px) {
+      grid-area: link-top;
+      
+  }
   }
   
   
@@ -50,9 +64,25 @@ nav a {
     font-family: $font-second;
     font-size: 1.4rem;
     line-height: 2.14;
+
+    @media (width >= 768px) {
+      grid-area: copy;
+  }
   }
 
   .heart {
     color: $main-color;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  @media (width >= 768px) {
+    .topics {
+      grid-area: topics;
+      justify-content: flex-start;
+    }
+
+    .social-media {
+      grid-area: social;
+      justify-content: flex-start;
+    }
+}
