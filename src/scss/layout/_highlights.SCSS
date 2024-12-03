@@ -1,0 +1,29 @@
+.highlights {
+    background-color: $second-color;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    &-subtitle {
+        font-family: $font-main;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 2.5;
+        color: $third-color
+    }
+}
+
+.product {
+    & img {
+        width: 11.4rem;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    & h3 {
+        font-family: $font-main;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2.14;
+    }
+}
