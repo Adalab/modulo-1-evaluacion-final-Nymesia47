@@ -8,12 +8,20 @@
         color: $main-color;
         font-size: 1.4rem;
         line-height: 2.14;
+
+        @media (width >= 768px) {
+            font-size: 1.6rem;
+        }
     }
     &-title {
         font-family: $font-main;
         font-size: 2.2rem;
         font-weight: bold;
         line-height: 1.36;
+
+        @media (width >= 768px) {
+            font-size: 3.2rem;
+        }
     }
     &-description {
         font-family: $font-second;
@@ -21,6 +29,10 @@
         line-height: 1.67;
         color: $third-color;
         margin: 1.0rem 0 4.0rem;
+
+        @media (width >= 768px) {
+            font-size: 2.0rem;
+        }
     }
     &-button {
         width: 16.0rem;
