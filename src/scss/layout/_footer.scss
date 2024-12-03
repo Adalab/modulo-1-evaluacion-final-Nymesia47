@@ -3,7 +3,28 @@
   color: $neutral-color;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4.0rem 1fr 1fr 10.0rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  & a {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: $neutral-color;
+    border-radius: 50%;
+    padding-top: 1.0rem;
+    box-shadow: 0rem 0.4rem .4rem 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 2.0rem;
+    translate: 0 -20%;
+  }
+  
+  
+  
+  & svg {
+    color: $main-color;
+  }
 }
 
 footer nav {
