@@ -2,22 +2,44 @@
     background-color: $second-color;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr 1fr 30%;
+    padding: 1.8rem 1.2rem 1.8rem;
+    
+    &-title_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    &-subtitle {
-        font-family: $font-main;
-        font-size: 1.2rem;
-        font-weight: bold;
-        line-height: 2.5;
-        color: $third-color
+        &-subtitle {
+            font-family: $font-main;
+            font-size: 1.2rem;
+            font-weight: bold;
+            line-height: 2.5;
+            color: $third-color
+        }
+        &-title {
+            font-family: $font-main;
+            font-size: 2.0rem;
+            font-weight: bold;
+            line-height: 1.5;
+        }
     }
+
+    
 }
 
 .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
     & img {
         width: 11.4rem;
         object-fit: contain;
         border-radius: 50%;
+        align-self: center;
+        box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
     }
 
     & h3 {
@@ -25,5 +47,33 @@
         font-size: 1.4rem;
         font-weight: bold;
         line-height: 2.14;
+        text-align: center;
     }
+   
 }
+
+.shop-link {
+    display: flex;
+    justify-content: center;
+
+    & button {
+        width: 18.4rem;
+        height: 4.7rem;
+        background-color: $main-color;
+        border-radius: 22.5rem;
+        border-style: hidden;
+
+    }
+    & a {
+        font-family: $font-second;
+        font-size: 2.0rem;
+        font-weight: 500;
+        color: $neutral-color;
+        text-decoration: none;
+    }
+
+}
+    
+    
+
+    
