@@ -4,6 +4,18 @@
     grid-template-columns: 1fr;
     grid-template-rows: 10% 1fr 1fr 1fr 30%;
     padding: 1.8rem 1.2rem 1.8rem;
+
+    @media (width >= 768px) {
+        height: 32vh;
+        padding: 2.7rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30% 1fr 25%;
+        grid-template-areas: 
+        "title title title"
+        "product1 product2 product3"
+        "button button button";
+
+    }
     
     &-title_section {
         display: flex;
@@ -11,18 +23,27 @@
         justify-content: center;
         align-items: center;
 
+        @media (width >= 768px) {
+            grid-area: title;
+        }
+
         &-subtitle {
             font-family: $font-main;
             font-size: 1.2rem;
             font-weight: bold;
             line-height: 2.5;
             color: $third-color
+   
         }
         &-title {
             font-family: $font-main;
             font-size: 2.0rem;
             font-weight: bold;
             line-height: 1.5;
+
+            @media (width >= 768px) {
+                font-size: 2.2rem
+            }
         }
     }
 
@@ -34,12 +55,18 @@
     flex-direction: column;
     align-items: center;
     padding: .5rem;
+
+    @media (width >= 768px) {
+        padding: 2.0rem;
+    }
+
     & img {
         width: 11.4rem;
         object-fit: contain;
         border-radius: 50%;
         align-self: center;
         box-shadow: 0rem 0.4rem .4rem 0 rgba(0, 0, 0, 0.25);
+
     }
 
     & h3 {
@@ -56,6 +83,10 @@
     display: flex;
     justify-content: center;
 
+    @media (width >= 768px) {
+        grid-area: button;
+    }
+
     & button {
         width: 18.4rem;
         height: 4.7rem;
@@ -64,6 +95,8 @@
         border-style: hidden;
         margin-bottom: 2.0rem;
 
+    
+
     }
     & a {
         font-family: $font-second;
@@ -71,6 +104,19 @@
         font-weight: 500;
         color: $neutral-color;
         text-decoration: none;
+    }
+
+}
+
+@media (width >= 768px) {
+    .product1 {
+        grid-area: product1;
+    }
+    .product2 {
+        grid-area: product2;
+    }
+    .product3 {
+        grid-area: product3;
     }
 
 }
