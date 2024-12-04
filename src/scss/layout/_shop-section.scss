@@ -3,20 +3,23 @@
     flex-direction: column;
     justify-items: flex-start;
     padding: 2.5rem 1.5rem 2.5rem;
+
+    @media (width >= 768px) {
+        font-size: 1.6rem;
+    }
+
+    @media (width >= 1280px) {
+        width: 70%;
+        margin: auto;
+    }
+       
     &-subtitle {
         font-family: $font-second;
         color: $main-color;
         font-size: 1.4rem;
         line-height: 2.14;
-
-        @media (width >= 768px) {
-            font-size: 1.6rem;
         }
 
-        @media (width >=1280px) {
-            padding: 2.3rem 4.0rem 2.3rem;
-        }
-    }
     &-title {
         font-family: $font-main;
         font-size: 2.2rem;

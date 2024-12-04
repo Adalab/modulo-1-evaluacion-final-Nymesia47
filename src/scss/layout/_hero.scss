@@ -15,7 +15,6 @@
         height: 70vh;
     }
     @media (width >= 1280px) {
-        background-size: cover;
         height: 80vh;
     }
     &-title {
@@ -31,16 +30,12 @@
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
         @media (width >= 768px) {
-            font-size: 6.2rem;
+            font-size: 6.0rem;
             line-height: 1.33;
             text-align: center;
             padding-top: 7.0rem;
             letter-spacing: 0.3rem;
 
-            @media (width >=1280px) {
-                font-size: 7.0rem;
-                margin-top: 0;
-            }
         }
         }
        
@@ -54,7 +49,6 @@
         margin: .5rem auto;
 
         @media (width >= 768px) {
-            width: 70%;
             height: 2.8rem;
             font-size: 2.8rem;
             line-height: 3rem;
