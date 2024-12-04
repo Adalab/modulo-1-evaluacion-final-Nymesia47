@@ -55,6 +55,10 @@
   }
 }
 
+.link-container a:hover {
+  background-color: black;
+}
+
 footer nav {
   display: flex;
   flex-direction: column;

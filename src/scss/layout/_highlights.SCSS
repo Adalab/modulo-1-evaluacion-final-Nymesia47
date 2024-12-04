@@ -101,7 +101,11 @@
         border-style: hidden;
         margin-bottom: 2.0rem;
 
-    
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 0rem 0.4rem .4rem 0 rgba(0, 0, 0, 0.25);
+            
+        }
 
     }
     & a {

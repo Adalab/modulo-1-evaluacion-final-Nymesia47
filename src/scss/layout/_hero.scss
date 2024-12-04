@@ -72,6 +72,7 @@
         margin: .5rem auto;
         border-style: hidden;
 
+
         @media (width >= 768px) {
             width: 5rem;
             height: 5rem;
@@ -91,3 +92,6 @@
     }
 }
 
+.hero-button:hover {
+        background-color: black;
+}
