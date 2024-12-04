@@ -17,6 +17,14 @@ The header sticks to the top left corner on scrolling.
 I used Flexbox for the Hero section and the shop section.
 I used Grid for the products highlights section and the Footer.
 The icons on the hero section and the footer redirect respectively to the product highlights section and the top of the page.
+Icons and buttons have hoover effects.
+
+# Tools used
+
+1. Adalab starter kit
+2. Node JS
+3. Sass
+4. vite
 
 # License
 
