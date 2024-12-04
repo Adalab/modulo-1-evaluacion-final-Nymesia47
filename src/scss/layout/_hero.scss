@@ -14,6 +14,10 @@
         background-position: 63%;
         height: 70vh;
     }
+    @media (width >=1280) {
+        background-size: cover;
+        height: 75vh;
+    }
     &-title {
         font-family: $font-main;
         width: 24.5rem;
@@ -32,6 +36,10 @@
             line-height: 10.0rem;
             margin-top: 40.0rem;
         }
+        @media (width >=1280) {
+            width: 114.6rem;
+            margin-top: 0;
+        }
     }
     & p {
         font-family: $font-second;
@@ -47,6 +55,10 @@
             height: 2.8rem;
             font-size: 2.8rem;
             line-height: 3rem;
+        }
+        @media (width >=1280) {
+            width: 56.6rem;
+            margin-top: 0;
         }
     }
     &-button {
