@@ -30,12 +30,17 @@
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
         @media (width >= 768px) {
-            font-size: 6.0rem;
+            width: 75%;
+            font-size: 6.5rem;
             line-height: 1.33;
             text-align: center;
             padding-top: 7.0rem;
             letter-spacing: 0.3rem;
 
+        }
+
+        @media (width >= 1280px) {
+            width: 50%;
         }
         }
        
@@ -45,11 +50,11 @@
         font-size: 1.6rem;
         line-height: 1.19;
         text-align: center;
-        width: 24.3rem;
+        width: 70%;
         margin: .5rem auto;
 
         @media (width >= 768px) {
-            height: 2.8rem;
+            width: 50%;
             font-size: 2.8rem;
             line-height: 3rem;
         }
@@ -70,7 +75,7 @@
         @media (width >= 768px) {
             width: 5rem;
             height: 5rem;
-            margin-top: 5.0rem;
+            margin-top: 2.0rem;
         }
     }
    
