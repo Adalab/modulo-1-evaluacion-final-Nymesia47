@@ -1,6 +1,6 @@
 .hero  {
     background-image: url(/images/cover.jpeg);
-    background-size: 820px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 83%;
     width: 100%;
@@ -10,17 +10,17 @@
     justify-content: center;
 
     @media (width >= 768px) {
-        background-size: 1280px;
+        background-size: cover;
         background-position: 63%;
         height: 70vh;
     }
-    @media (width >=1280) {
+    @media (width >= 1280) {
         background-size: cover;
-        height: 75vh;
+        height: 80vh;
     }
     &-title {
         font-family: $font-main;
-        width: 24.5rem;
+        width: 60%;
         font-size: 3.0rem;
         font-weight: bold;
         color: $neutral-color;
@@ -31,16 +31,19 @@
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
         @media (width >= 768px) {
-            width: 68.8rem;
-            font-size: 7.5rem;
-            line-height: 10.0rem;
-            margin-top: 40.0rem;
+            font-size: 6.2rem;
+            line-height: 1.33;
+            text-align: center;
+            padding-top: 7.0rem;
+            letter-spacing: 0.3rem;
+
+            @media (width >=1280) {
+                font-size: 7.0rem;
+                margin-top: 0;
+            }
         }
-        @media (width >=1280) {
-            width: 114.6rem;
-            margin-top: 0;
         }
-    }
+       
     & p {
         font-family: $font-second;
         color: $neutral-color;
@@ -51,14 +54,15 @@
         margin: .5rem auto;
 
         @media (width >= 768px) {
-            width: 34.0rem;
+            width: 70%;
             height: 2.8rem;
             font-size: 2.8rem;
             line-height: 3rem;
         }
         @media (width >=1280) {
-            width: 56.6rem;
+            width: 60%;
             margin-top: 0;
+            line-height: 1.33;
         }
     }
     &-button {
