@@ -29,6 +29,7 @@
     translate: 0 -20%;
 
     @media (width >= 768px) {
+      place-self: center;
       grid-area: link-top;
       
   }
